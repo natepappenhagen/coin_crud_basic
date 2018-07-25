@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>auth index</title>
+</head>
+<body>
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="./users/new">User Profiles</a>
+        <a class="nav-link" href="./auth">Login/Register</a>
+          <a class="nav-link" href="#">Logout</a>
+
+    <%= message %>
+    <h1>Register/Login</h1>
+    <h2>Register</h2>
+    <form action="/auth/register" method="post">
+        username: <input type="text" name="username">
+        password: <input type="password" name="password">
+        <button type="submit">Register</button>
+    </form>
+    <h2>Login</h2>
+    <form action="/auth/login" method="post">
+        username: <input type="text" name="username">
+        password: <input type="password" name="password">
+        <button type="submit">Login</button>
+    </form>
+    <a href="/auth/google">Sign In with Google</a>
+
+</body>
+</html>

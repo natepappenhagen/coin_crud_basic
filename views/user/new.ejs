@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Create User Profile</title>
+
+</head>
+<body>
+  <ul>
+          <li><a class="" href="/">Home </a></li>
+          <li><a class="" href="/users/new">User Profile Update</a></li>
+          <li><a class="" href="/users">Users</a></li>
+          <li><a class="" href="/auth">Login or Register</a></li>
+          <li><a class="" href="/auth/logout">Logout</a></li>
+          <li><a href="/holdings/new">Create a new Holding</a></li>
+          <li><a href="/holdings/">Holdings</a></li>
+</ul>
+
+    <h1>User Profile</h1>
+   
+   
+      <form action="/user" method="POST">
+        <input type="text" name="username" placeholder="username"><br>
+        <br>
+        <input type="text" name="password" placeholder="password"><br>
+        <br>
+        <input type="text" name="name" placeholder="Name"><br>
+        <br>
+        <button type="submit">Save Profile</button>
+      </form>
+    </div>
+
+
+</body>
+
+</html>

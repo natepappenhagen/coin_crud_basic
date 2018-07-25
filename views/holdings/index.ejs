@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Holding Index Page</title>
+  </head>
+<body>
+  <ul>
+          <li><a class="" href="/">Home </a></li>
+          <li><a class="" href="/users/new">User Profile Update</a></li>
+          <li><a class="" href="/users">Users</a></li>
+          <li><a class="" href="/auth">Login or Register</a></li>
+          <li><a class="" href="/auth/logout">Logout</a></li>
+          <li><a href="/holdings/new">Create a new Holding</a></li>
+          <li><a href="/holdings/">Holdings</a></li>
+</ul>
+
+
+   <div>
+    <h1>Holding Index Page</h1>
+     
+      <h2>List of Holdings</h2>
+      <ul>
+        <% for(let i = 0; i < holdings.length; i++){ %>
+          <li>
+            <a href="/holdings/<%=holdings[i].id%>"><%=holdings[i].name%><%=holdings[i].marketPriceUSD%></a>
+          </li>
+        <% } %>
+      </ul>
+
+      <h1> eth current price <%= JSON.stringify(ethereum)%> </h1>
+
+  </body>
+</html>
